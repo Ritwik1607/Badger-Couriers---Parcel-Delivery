@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Badger Couriers - Parcel Delivery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="font-roboto bg-gray-100">
+  <header class="bg-blue-600 text-white p-4 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Badger Couriers</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a class="hover:underline" href="#">Home</a></li>
+          <li><a class="hover:underline" href="#">Services</a></li>
+          <li><a class="hover:underline" href="#">About Us</a></li>
+          <li><a class="hover:underline" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto p-4">
+    <section class="bg-blue-600 text-white p-8 rounded-lg mb-6 relative shadow-lg">
+      <img alt="Background image showcasing a motorcycle courier delivering a parcel" 
+           class="absolute inset-0 w-full h-full object-cover opacity-30" 
+           src="https://storage.googleapis.com/a1aa/image/7nx50TcS6HrbIJbkXYUH8f7YpkCDdGffQ6yzcQhEsZL5fRNQB.jpg"/>
+      <div class="relative z-10 max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Seamless Parcel Delivery Booking</h2>
+        <p class="text-lg mb-6">Book your local parcel deliveries in Weston Sydney with express same-day delivery.</p>
+        <a class="bg-white text-blue-600 px-4 py-2 rounded-md font-bold hover:bg-gray-100" href="#book-delivery">Get Started</a>
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded shadow-md mb-6" id="book-delivery">
+      <h2 class="text-2xl font-bold mb-4 text-center">Book Your Delivery</h2>
+      <form id="delivery-form" class="space-y-4 max-w-lg mx-auto">
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="pickup-location">Pickup Location</label>
+          <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
+                 id="pickup-location" placeholder="Enter pickup location" type="text" required/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="dropoff-location">Dropoff Location</label>
+          <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
+                 id="dropoff-location" placeholder="Enter dropoff location" type="text" required/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="parcel-size">Parcel Size</label>
+          <select class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="parcel-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="parcel-weight">Parcel Weight (kg)</label>
+          <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" 
+                 id="parcel-weight" placeholder="Enter parcel weight in kg" type="number" required min="0" step="0.1"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="delivery-date">Delivery Date</label>
+          <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="delivery-date" type="date" required/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="delivery-time">Delivery Time</label>
+          <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="delivery-time" type="time" required/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="cost-calculator">Estimated Cost</label>
+          <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="cost-calculator" readonly type="text"/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="payment-method">Payment Method</label>
+          <select class="mt-1 block w-full p-2 border border-gray-300 rounded-md" id="payment-method">
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank-transfer">Bank Transfer</option>
+          </select>
+        </div>
+        <button class="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700" type="submit">Book Now</button>
+      </form>
+    </section>
+
+    <section class="bg-white p-6 rounded shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Why Choose Us?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="flex items-center">
+          <img alt="Fast delivery icon" class="w-16 h-16 mr-4" src="https://storage.googleapis.com/a1aa/image/MfL39bFMjiRXTyNtw1G9gJCaAxy92dJkuSFEXofwZ1e9fRNQB.jpg"/>
+          <div>
+            <h3 class="text-xl font-bold">Fast Delivery</h3>
+            <p>We ensure your parcels are delivered on time, every time.</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img alt="Secure delivery icon" class="w-16 h-16 mr-4" src="https://storage.googleapis.com/a1aa/image/YkuIk9aJpLqeRynSfe2136R4xcIObynqE6egEE8BQeKCAkagC.jpg"/>
+          <div>
+            <h3 class="text-xl font-bold">Secure Delivery</h3>
+            <p>Your parcels are handled with utmost care and security.</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img alt="Customer support icon" class="w-16 h-16 mr-4" src="https://storage.googleapis.com/a1aa/image/Yy1oqMeffScJjogfyxc55ahW30Ejojk6Mzlz75f5vP3UfH1AF.jpg"/>
+          <div>
+            <h3 class="text-xl font-bold">24/7 Support</h3>
+            <p>Our customer support is available round the clock to assist you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-blue-600 text-white p-4 mt-6">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Badger Couriers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("delivery-form").addEventListener("input", function() {
+      const sizeMultiplier = { small: 1, medium: 1.5, large: 2 };
+      const size = document.getElementById("parcel-size").value;
+      const weight = parseFloat(document.getElementById("parcel-weight").value) || 0;
+
+      const cost = weight * (sizeMultiplier[size] || 1) * 10;
+      document.getElementById("cost-calculator").value = `$${cost.toFixed(2)}`;
+    });
+  </script>
+</body>
+</html>
